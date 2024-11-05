@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=WindSong:wght@400;500&display=swap');
+/*HEAD*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+/*On s'adresse à tout le monde et on met une astérique pour mettre zéro marge*/    
+/*On copie colle depuis le site Google Fonts*/
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap; /*il va souvent de pair avec le display flex*/
+    /*flex wrap renvoit à la ligne*/
+}
+li {
+    list-style-type: none; /* pour enlever les puces*/
+    justify-content: space-between;
+    
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+.alignCenter {
+    align-items: center;
+}
+.bold {
+    font-weight: 600;
+}
+.bgYellow {
+    background-color: #F3C827;
+
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+.btn {
+    background-color: #f66909;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    
+}
+/* HEADER*/
+header {
+        padding: 5px 15px;
+}
+.navHeader {
+    width:50%;
+    text-decoration: none;
+}
+.panier {
+    color: #F3C827;
+    font-size: 30px;
+}
+.hero {
+    height: 100vh;
+}
+.hero h2{
+    font-family: "WindSong", cursive;
+    font-size: 128px;
+    font-weight: 500;
+
+    }
+h1 {
+    font-size: 32px;
+}
+/*Contenir dans des limites*/
