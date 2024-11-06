@@ -74,3 +74,48 @@ h1 {
     font-size: 32px;
 }
 /*Contenir dans des limites*/
+
+/*MAIN*/
+.flex {
+display: flex;
+flex-wrap: wrap;
+}
+.width {
+max-width: 1000px;
+width: 30%;
+margin: auto;
+justify-content: space-between;
+}
+.EngagementTitle {
+    margin: auto;
+}
+/*SECTION LES BIENFAITS DU MIEL*/
+.SectionMiel {
+    background-color: #F3C827;
+    
+ 
+}
+.divMiel {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    justify-content: space-between;
+
+}
+.btn2 {
+    background-color: #f66909;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    max-width: fit-content;
+
+}
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+}
+h3 {
+    margin-bottom: auto;
+}
