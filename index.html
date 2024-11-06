@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- J'AVAIS LES BONNES IDEES DE STRUCTURATION MAIS MON CSS ETAIT TETU! J'AI TENTE DE DETOURNER LES ACHOPPEMENTS NON SANS LARMES ET DOULEURS! -->
 
 <head>
     <meta charset="UTF-8">
@@ -15,16 +16,16 @@
         <nav class="navHeader bold">
             <ul class="flex spaceBetween">
                 <li>
-                    <a href="">Engagement</a>
+                    <a href="#Engagement">Engagement</a>
                 </li>
                 <li>
-                    <a href="">Notre savoir faire</a>
+                    <a href="#Bienfait">Bienfaits du Miel</a>
                 </li>
                 <li>
-                    <a href="">Notre histoire</a>
+                    <a href="#Produits">Produits</a>
                 </li>
                 <li>
-                    <a href="">Nous contacter</a>
+                    <a href="#NousTrouver">Nous trouver</a>
                 </li>
             </ul>
         </nav>
@@ -45,30 +46,38 @@
     <section>
         <!-- regle des flex bloc, le parent est flex, les enfants ont une largeur -->
         <div class="container">
-        <div>
-            <h3 class="container flex spaceBetween alignCenter EngagemenTitle">Engagement</h3>
-        </div>
+            <div>
+                <h3 id="Engagement" class="container flex spaceBetween alignCenter EngagemenTitle">Engagement</h3>
+            </div>
 
-        <div class="flex">
-            <p class="width">Au cœur d'une vocation dédiée à la préservation de l'équilibre naturel, notre apiculteur
-                incarne une passion inébranlable pour l'art ancien de l'apiculture. Imprégné de traditions transmises de
-                génération en génération, son engagement envers la production de miel s'inscrit dans une démarche
-                résolument ancrée dans le respect de la nature. À travers une approche méticuleuse et respectueuse des
-                abeilles, cet apiculteur s'efforce de créer un miel d'une qualité exceptionnelle, révélateur des nuances
-                uniques que la biodiversité offre à chaque</p>
+            <div class="flex">
+                <p class="width50">Au cœur d'une vocation dédiée à la préservation de l'équilibre naturel, notre
+                    apiculteur
+                    incarne une passion inébranlable pour l'art ancien de l'apiculture. Imprégné de traditions
+                    transmises de
+                    génération en génération, son engagement envers la production de miel s'inscrit dans une démarche
+                    résolument ancrée dans le respect de la nature. À travers une approche méticuleuse et respectueuse
+                    des
+                    abeilles, cet apiculteur s'efforce de créer un miel d'une qualité exceptionnelle, révélateur des
+                    nuances
+                    uniques que la biodiversité offre à chaque</p>
 
-            <p class="width">Son rucher, niché dans un écrin de verdure, reflète une philosophie axée sur la symbiose
-                entre l'homme et l'environnement. En favorisant des pratiques agricoles durables, notre apiculteur
-                contribue non seulement à la préservation des abeilles, mais aussi à la diversité florale de la région.
-                Chaque pot de miel qui émane de son exploitation est le fruit d'un processus méticuleux, où l'équilibre
-                entre la tradition et l'innovation se conjugue pour offrir une expérience gustative authentique et pure.
-            </p>
-        </div>
+                <p class="width50">Son rucher, niché dans un écrin de verdure, reflète une philosophie axée sur la
+                    symbiose
+                    entre l'homme et l'environnement. En favorisant des pratiques agricoles durables, notre apiculteur
+                    contribue non seulement à la préservation des abeilles, mais aussi à la diversité florale de la
+                    région.
+                    Chaque pot de miel qui émane de son exploitation est le fruit d'un processus méticuleux, où
+                    l'équilibre
+                    entre la tradition et l'innovation se conjugue pour offrir une expérience gustative authentique et
+                    pure.
+                </p>
+            </div>
 
     </section>
     <section class="SectionMiel">
         <div class="container">
-            <h3>Bienfaits du miel</h3>
+            <h3 id="Bienfait">Bienfaits du miel</h3>
             <div class="divMiel">
                 <div>
                     <h4>Antioxydants naturels</h4>
@@ -98,113 +107,140 @@
             <div><a href="assets/bouton_ensavoirplus.png" class="btn2">En savoir plus sur les bienfaits du miel</a>
             </div>
         </div>
-    </div>    
+        </div>
     </section>
-    <section>
-        <h3>Produits</h3>
-        <div class="bgYellow">
-            <img src="assets/imagepotdemiel.png" alt="">
-            <h4>Miel de chatainger</h4>
-            <p>Le Miel de châtaignier tonifiant, connaît un regain de popularité avec son goût …</p>
-            <a href="">
-                <img src="./assets/panier-blanc.png" alt="">
-                Ajouter au panier
-            </a>
-        </div>
-        <div class="bgYellow">
-            <img src="assets/imagePainDeMiel.png" alt="">
-            <h4>Pain au miel</h4>
-            <p>Le pain au miel est une recette au goût inégalé, fort d’un ancien savoir faire…</p>
-            <a href="">
-                <img src="./assets/panier-blanc.png" alt="">
-                Ajouter au panier
-            </a>
-        </div>
-        <div class="bgYellow">
-            <img src="assets/imagesFigues.png" alt="">
-            <h4>Figues confites</h4>
-            <p>La figue se marie à merveille à la douceur du miel pour faire revenir vos plates…</p>
-            <a href="">
-                <img src="./assets/panier-blanc.png" alt="">
-                Ajouter au panier
-            </a>
+    <section class="bgWhiteProduits">
+        <div class="container">
+            <div>
+            <h3 id="Produits">Produits</h3>
+
+            <!-- il faut créer deux div pour séparer le fond section blanc des 3 div produits -->
+            <!-- J'ai failli pleurer parce que je n'arrive pas à centrer les 3 cards -->
+            <div class="flex2 spaceBetween">
+                <div class="bgYellow width270 ">
+                    <img src="assets/imagepotdemiel.png" alt="">
+                    <h4>Miel de châtaignier</h4>
+                    <p>Le Miel de châtaignier tonifiant, connaît un regain de popularité avec son goût …</p>
+                    <a href="a" class="btn">
+                        <img src="./assets/panier-blanc.png" alt="">Ajouter au panier</a>
+                </div>
+
+                <div class="bgYellow width270 spaceBetween ">
+                    <img src="assets/imagePainDeMiel.png" alt="">
+                    <h4>Pain au miel</h4>
+                    <p>Le pain au miel est une recette au goût inégalé, fort d’un ancien savoir faire…</p>
+                    <a href="a" class="btn">
+                        <img src="./assets/panier-blanc.png" alt="">Ajouter au panier</a>
+                    </a>
+                </div>
+                <div class="bgYellow width270 spaceBetween">
+                    <img src="assets/imagesFigues.png" alt="">
+                    <h4>Figues confites</h4>
+                    <p>La figue se marie à merveille à la douceur du miel pour faire revenir vos plates…</p>
+                    <a href="a" class="btn">
+                        <img src="./assets/panier-blanc.png" alt="">Ajouter au panier</a>
+                </div>
+            </div>
         </div>
     </section>
     <!-- SECTION CLIENTS -->
     <section class="bgYellow">
-        <div>
-            <img src="./assets/isabelle.png" alt="">
-            <p>Isabelle B</p>
-            <div> ★★★★☆</div>
-            <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
-                savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise</p>
+        <div class="container">
+            <h3>Nos Clients</h3>
+            <div class="containerProd flex2">
+                <div class="marginPROD">
+
+                    <img src="./assets/isabelle.png" alt="">
+                    <p>Isabelle B</p>
+                    <div> ★★★★☆</div>
+                    <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
+                        savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette
+                        entreprise
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/jean-luc.png" alt="">
+                    <p>Jean Luc D.</p>
+                    <div> ★★★★☆</div>
+                    <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
+                        savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette
+                        entreprise.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/marie.png" alt="">
+                    <p>Marie G.</p>
+                    <div> ★★★★★</div>
+                    <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
+                        savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette
+                        entreprise
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="./assets/jean-luc.png" alt="">
-            <p>Jean Luc D.</p>
-            <div> ★★★★☆</div>
-            <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
-                savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise.
-            </p>
-        </div>
-        <div>
-            <img src="./assets/marie.png" alt="">
-            <p>Marie G.</p>
-            <div> ★★★★★</div>
-            <p>La Ruche offre un miel de très bonne qualité, avec un goût authentique qui rappelle vraiment le
-                savoir-faire artisanal. Les emballages sont soignés, et j'apprécie le côté local de cette entreprise</p>
         </div>
     </section>
     <section>
-        <h3>Nous trouver</h3>
-        <!-- carte -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1974981478093!2d4.356613975449251!3d45.40535683736415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5aee28ef51b4b%3A0xc80903a95d39c929!2s12%20Rue%20Jean-Pierre%20Blachier%2C%2042150%20La%20Ricamarie!5e0!3m2!1sfr!2sfr!4v1730710434453!5m2!1sfr!2sfr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <address>
-            <p>La ruche</p>
-            <p>15 rue Jean-Pierre Blachier</p>
-            <p>42520 Maclas</p>
-        </address>
+        <div class="container">
+            <h3 id="NousTrouver">Nous trouver</h3>
+            <!-- carte -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1974981478093!2d4.356613975449251!3d45.40535683736415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5aee28ef51b4b%3A0xc80903a95d39c929!2s12%20Rue%20Jean-Pierre%20Blachier%2C%2042150%20La%20Ricamarie!5e0!3m2!1sfr!2sfr!4v1730710434453!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <address>
+                <p>La ruche</p>
+                <p>15 rue Jean-Pierre Blachier</p>
+                <p>42520 Maclas</p>
+            </address>
     </section>
     <footer>
-        <div>
-            <h3>Contactez nous</h3>
-            <a href="tel:+"></a>
-            <a href="mailto:"></a>
-            <p>Du lundi au vendredi
-                <br>
-                8h → 12h | 14h → 18h
-            </p>
-            <p>Samedi
-                <br>
-                8h → 12h
-            </p>
-        </div>
-        <div>
-            <h3>Réseaux</h3>
-            <a href="">
-                <img src="./assets/fb.png" alt="">
-            </a>
-            <a href="">
-                <img src="./assets/insta.png" alt="">
-            </a>
-        </div>
-        <div>
-            <h3>Information</h3>
-            <ul>
-                <li>
-                    <a href="">→ Plan du site</a>
-                </li>
-                <li>
-                    <a href="">→ Condition générale de vente</a>
-                </li>
-                <li>
-                    <a href="">→ Information légales</a>
-                </li>
-            </ul>
-        </div>
+        <section class="bgYellow">
+
+            <div class="btnProduits sectionNT">
+                <div class="container alignNT">
+                    
+                        <div class="btnProduits">
+                            <h3>Contactez nous</h3>
+                            <a href="tel:+"></a>
+                            <a href="mailto:"></a>
+                            <p>Du lundi au vendredi
+                                <br>
+                                8h → 12h | 14h → 18h
+                            </p>
+                             <p>Samedi
+                                <br>
+                                8h → 12h
+                            </p>
+                        </div>
+                        <div class="btnProduits">
+                            <h3>Réseaux</h3>
+                            <a href="">
+                                <img src="./assets/fb.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="./assets/insta.png" alt="">
+                            </a>
+                        </div>
+                        <div class="btnProduits">
+                            <h3>Information</h3>
+                            <ul>
+                                <li>
+                                    <a href="">→ Plan du site</a>
+                                </li>
+                                <li>
+                                    <a href="">→ Condition générale de vente</a>
+                                </li>
+                                <li>
+                                    <a href="">→ Information légales</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
     </footer>
 </body>
 
